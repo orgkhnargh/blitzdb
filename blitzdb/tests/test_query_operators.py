@@ -510,7 +510,7 @@ def test_ne(backend):
 
     # Test with list
     query = {'name': {'$ne': [marlon_brando.name, charlie_chaplin.name]}}
-    assert len(backend.filter(Actor, query)) == len([leonardo_di_caprio, david_hasselhoff, charlie_chaplin, marlon_brando])
+    assert len(backend.filter(Actor, query)) == len([leonardo_di_caprio, david_hasselhoff, charlie_chaplin])
     # Test with list
 
     # Test with no result
